@@ -84,4 +84,4 @@ docker ps
 
 ### Open the web browser and enter the ip 0.0.0.0:80(localhost) or if you are using AWS EC2 instance you can use their own public
 # RESULT :-
-![staticwebsite](image.png)
+![staticwebsite](Screenshot from 2024-10-22 23-34-54.png.)

@@ -1,13 +1,14 @@
+
 # Deploy Static Website 
 Here are the steps to Dockerize a static website using Nginx:
 
 
 ## Firstly install docker in your system
 
-bash
+```bash
 sudo apt-get update
 sudo apt-get install docker.io
-
+```
 
 ### Give all permissions to run the docker.
 
@@ -15,17 +16,17 @@ Let start-->>
 
 ### Step-1
 
-bash
+```bash
 mkdir project-1
 cd project-1
-
+```
 
 #### Let make the index.html file and  Dockerfile for build the project.
 
-bash
+```bash
 vim index.html
-
-bash
+```
+```bash
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,30 +83,30 @@ bash
 </body>
 </html>
 
-
+```
 ### Step-2
-bash
+```bash
 vim Dockerfile
+```
 
-
-bash
+```bash
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html
 EXPOSE 80
-
+```
 ### Step-3
 
 Run these commands on terminal...
 
-bash
+```bash
 docker build -t myproject1 .
-
+```
 
 Now check the current images: there are two images one is nginx and second is myproject1
 
-bash
+```bash
 docker run -d -p 80:80 --name=myproject1 myproject1
-
+```
 
 Now check the running container...
 
@@ -113,3 +114,4 @@ Now check the running container...
 
 # RESULT :-
 ![staticwebsite](image.png)
+

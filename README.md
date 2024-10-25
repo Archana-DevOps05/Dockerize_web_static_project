@@ -7,7 +7,6 @@ Here are the steps to Dockerize a static website using Nginx:
 ## Firstly Install Docker in your System
 
 
-```bash
 sudo apt-get update
 sudo apt-get install -y docker.io
 
@@ -84,4 +83,5 @@ docker ps
 
 ### Open the web browser and enter the ip 0.0.0.0:80(localhost) or if you are using AWS EC2 instance you can use their own public
 # RESULT :-
+
 ![staticwebsite](image.png)
